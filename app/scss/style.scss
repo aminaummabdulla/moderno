@@ -199,6 +199,7 @@ background-color: $green;
     &-author{
         display: flex;
         align-items: center;
+        max-width: 245px;
         
         .avatar {
             width: 30px;
@@ -214,7 +215,15 @@ background-color: $green;
             font-size: 14px;
             font-weight: 500;
         }
+
         
+    }
+    &-star{
+        font-size: 12px;
+    span{
+        color: $bg;
+    }
+
     }
 }
 .products__bottom-btn{
@@ -237,3 +246,54 @@ background-color: $green;
     }
 }
 // end products
+
+//start product-slider
+
+.product-slider{
+    padding: 110px 9 120px;
+    height: 830px;
+    .product-slider__title{
+        padding-top: 110px;
+    }
+    
+    .slick-dots{
+        text-align: center;
+        margin-top: 50px;
+        li{
+            display: inline-block;
+            margin-left: 3px;
+            margin-right: 3px;
+            &.slick-active{
+                button{
+                    background-color: $green;
+                }
+            }
+
+            button{
+                border-radius: 50%;
+                background-color: rgb(232, 232, 232);
+                border: none;
+                font-size: 0;
+                height: 16px;
+                width: 16px;
+                cursor: pointer;
+                outline: none;
+
+            }
+        }
+    }
+}
+
+.Ellipse_6 {
+  border-radius: 50%;
+  background-color: rgb(232, 232, 232);
+  position: absolute;
+  left: 915px;
+  top: 2761px;
+  width: 22px;
+  height: 22px;
+  z-index: 168;
+}
+
+
+//end product-slider
